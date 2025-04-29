@@ -1,14 +1,15 @@
 package core.usecases;
 
 import infrastructure.api.GenreApiClient;
-import infrastructure.db.GenreRepository;
+import infrastructure.db.SQLiteRepositoryInterface;
+
 import java.util.Map;
 
 public class FetchGenres {
     private final GenreApiClient apiClient;
-    private final GenreRepository repository;
+    private final SQLiteRepositoryInterface repository;
 
-    public FetchGenres(GenreApiClient apiClient, GenreRepository repository) {
+    public FetchGenres(GenreApiClient apiClient, SQLiteRepositoryInterface repository) {
         this.apiClient = apiClient;
         this.repository = repository;
     }
