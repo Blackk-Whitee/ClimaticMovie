@@ -2,15 +2,16 @@ package core.usecases;
 
 import core.Movie;
 import infrastructure.api.MovieApiClient;
-import infrastructure.db.MovieRepository;
+import infrastructure.db.SQLiteRepositoryInterface;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class FetchMovies {
     private final MovieApiClient apiClient;
-    private final MovieRepository repository;
+    private final SQLiteRepositoryInterface repository;
 
-    public FetchMovies(MovieApiClient apiClient, MovieRepository repository) {
+    public FetchMovies(MovieApiClient apiClient, SQLiteRepositoryInterface repository) {
         this.apiClient = apiClient;
         this.repository = repository;
     }

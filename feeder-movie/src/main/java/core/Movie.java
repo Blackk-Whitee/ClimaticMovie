@@ -9,8 +9,7 @@ public class Movie {
     private final int voteCount;
     private final List<Integer> genreIds;
 
-    public Movie(int id, String title, String releaseDate,
-                 double voteAverage, int voteCount, List<Integer> genreIds) {
+    public Movie(int id, String title, String releaseDate, double voteAverage, int voteCount, List<Integer> genreIds) {
         this.id = id;
         this.title = title;
         this.releaseDate = releaseDate;
