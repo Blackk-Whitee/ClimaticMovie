@@ -1,6 +1,6 @@
 package org.example.application.scheduler;
 
-import org.example.application.controller.WeatherController;
+import org.example.application.controller.Control;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 import java.util.Set;
@@ -12,7 +12,7 @@ public class WeatherScheduler {
     private final Scheduler scheduler;
     private final JobDetail job;
 
-    public WeatherScheduler(String[] cities, WeatherController controller) throws SchedulerException {
+    public WeatherScheduler(String[] cities, Control controller) throws SchedulerException {
         this.scheduler = StdSchedulerFactory.getDefaultScheduler();
 
         JobDataMap jobData = getJobDataMap(cities, controller);
@@ -24,7 +24,7 @@ public class WeatherScheduler {
         scheduler.scheduleJob(job, Set.of(morningTrigger, eveningTrigger), true);
     }
 
-    private static JobDataMap getJobDataMap(String[] cities, WeatherController controller) {
+    private static JobDataMap getJobDataMap(String[] cities, Control controller) {
         JobDataMap jobData = new JobDataMap();
         jobData.put("cities", cities);
         jobData.put("controller", controller);
@@ -32,21 +32,19 @@ public class WeatherScheduler {
     }
 
     private Trigger getEveningTrigger() {
-        Trigger eveningTrigger = newTrigger()
+        return newTrigger()
                 .withIdentity("eveningTrigger")
-                .withSchedule(dailyAtHourAndMinute(19, 0)) // 7:00 PM
+                .withSchedule(dailyAtHourAndMinute(19, 51)) // 7:00 PM
                 .forJob(job)
                 .build();
-        return eveningTrigger;
     }
 
     private Trigger getMorningTrigger() {
-        Trigger morningTrigger = newTrigger()
+        return newTrigger()
                 .withIdentity("morningTrigger")
                 .withSchedule(dailyAtHourAndMinute(7, 0)) // 7:00 AM
                 .forJob(job)
                 .build();
-        return morningTrigger;
     }
 
     public void start() throws SchedulerException {
@@ -58,7 +56,7 @@ public class WeatherScheduler {
         public void execute(JobExecutionContext context) {
             JobDataMap data = context.getJobDetail().getJobDataMap();
             String[] cities = (String[]) data.get("cities");
-            WeatherController controller = (WeatherController) data.get("controller");
+            Control controller = (Control) data.get("controller");
 
             for (String city : cities) {
                 controller.fetchAndSaveWeather(city);

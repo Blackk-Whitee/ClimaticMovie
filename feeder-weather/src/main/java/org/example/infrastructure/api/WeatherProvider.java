@@ -6,17 +6,17 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.time.LocalDateTime;
 
-public class WeatherApiClient {
-    private final WeatherApiService service;
+public class WeatherProvider {
+    private final WeatherApiProvider service;
     private final String apiKey;
 
-    public WeatherApiClient(String baseUrl, String apiKey) {
+    public WeatherProvider(String baseUrl, String apiKey) {
         this.apiKey = apiKey;
         this.service = new Retrofit.Builder()
                 .baseUrl(baseUrl)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-                .create(WeatherApiService.class);
+                .create(WeatherApiProvider.class);
     }
 
     public Weather fetchWeather(String city) throws Exception {

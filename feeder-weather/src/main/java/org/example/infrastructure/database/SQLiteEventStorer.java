@@ -3,10 +3,10 @@ package org.example.infrastructure.database;
 import org.example.domain.models.Weather;
 import java.sql.*;
 
-public class WeatherDatabase {
+public class SQLiteEventStorer {
     private final Connection connection;
 
-    public WeatherDatabase(String dbUrl) throws SQLException {
+    public SQLiteEventStorer(String dbUrl) throws SQLException {
         this.connection = DriverManager.getConnection(dbUrl);
         createTable();
     }
