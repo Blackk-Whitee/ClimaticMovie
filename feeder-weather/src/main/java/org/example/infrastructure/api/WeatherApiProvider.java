@@ -5,7 +5,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 
-public interface WeatherApiService {
+public interface WeatherApiProvider {
     @GET("/v1/current.json")
     Call<WeatherApiResponse> getCurrentWeather(
             @Query("key") String apiKey,

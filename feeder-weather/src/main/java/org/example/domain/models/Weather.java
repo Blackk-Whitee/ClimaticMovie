@@ -2,6 +2,7 @@ package org.example.domain.models;
 
 import com.google.gson.annotations.SerializedName;
 import java.time.LocalDateTime;
+import java.util.Locale;
 
 public class Weather {
     private String city;
@@ -35,6 +36,10 @@ public class Weather {
 
     public double getTemperature() {
         return temperature;
+    }
+
+    public String getTemperatureAsString() {
+        return String.format(Locale.US, "%.2f", this.temperature);
     }
 
     public void setTemperature(double temperature) {
