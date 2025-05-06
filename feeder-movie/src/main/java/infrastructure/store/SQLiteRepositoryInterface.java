@@ -1,4 +1,4 @@
-package infrastructure.db;
+package infrastructure.store;
 
 import core.Movie;
 import java.util.List;
