@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>feeder-weather</module>
-        <module>event-store-builder</module>
     </modules>
 
     <properties>
