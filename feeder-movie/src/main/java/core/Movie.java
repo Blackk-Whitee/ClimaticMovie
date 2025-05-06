@@ -1,27 +1,38 @@
 package core;
 
+import java.time.Instant;
 import java.util.List;
 
 public class Movie {
-    private final int id;
+    private String timestamp;
+    private String ss;
     private final String title, releaseDate;
     private final double voteAverage;
-    private final int voteCount;
-    private final List<Integer> genreIds;
+    private final List<String> genres;
 
-    public Movie(int id, String title, String releaseDate, double voteAverage, int voteCount, List<Integer> genreIds) {
-        this.id = id;
+    public Movie(String timestamp, String ss, String title, String releaseDate, double voteAverage, List<String> genres) {
+        this.timestamp = timestamp;
+        this.ss = ss;
+        this.genres = genres;
         this.title = title;
         this.releaseDate = releaseDate;
         this.voteAverage = voteAverage;
-        this.voteCount = voteCount;
-        this.genreIds = genreIds;
     }
 
-    public int getId() { return id; }
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "Instant=" + timestamp +
+                ", ss=" + ss +
+                ", title='" + title + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                ", voteAverage=" + voteAverage +
+                ", genres=" + genres +
+                '}';
+    }
+
     public String getTitle() { return title; }
     public String getReleaseDate() { return releaseDate; }
     public double getVoteAverage() { return voteAverage; }
-    public int getVoteCount() { return voteCount; }
-    public List<Integer> getGenreIds() { return genreIds; }
+    public List<String> getGenreIds() { return genres; }
 }

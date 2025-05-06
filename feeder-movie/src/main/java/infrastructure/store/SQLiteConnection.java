@@ -1,4 +1,4 @@
-package infrastructure.db;
+package infrastructure.store;
 
 import core.Movie;
 import java.sql.*;
@@ -64,11 +64,9 @@ public class SQLiteConnection implements SQLiteRepositoryInterface {
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             conn.setAutoCommit(false);
             for (Movie movie : movies) {
-                pstmt.setInt(1, movie.getId());
                 pstmt.setString(2, movie.getTitle());
                 pstmt.setString(3, movie.getReleaseDate());
                 pstmt.setDouble(4, movie.getVoteAverage());
-                pstmt.setInt(5, movie.getVoteCount());
                 pstmt.setString(6, movie.getGenreIds().toString());
                 pstmt.executeUpdate();
             }
