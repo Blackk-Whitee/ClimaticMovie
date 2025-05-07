@@ -6,12 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="feeder-movie" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ClimaticMovie" target="22" />
-      <module name="feeder-movie" target="24" />
-      <module name="feeder-weather" target="22" />
-    </bytecodeTargetLevel>
   </component>
 </project>
