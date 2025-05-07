@@ -34,7 +34,6 @@ public class TmdbMovieProvider implements MovieProvider{
                 continue;
             }
         }
-
         return allMovies;
     }
 
