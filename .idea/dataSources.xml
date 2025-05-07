@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+<<<<<<< HEAD
     <data-source source="LOCAL" name="mala" uuid="7bb918b6-ebb3-41b6-a8af-248d5db683bc">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -44,6 +45,13 @@
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\aimar\IdeaProjects\ClimaticMovie\movies.sqlite</jdbc-url>
+=======
+    <data-source source="LOCAL" name="weather_data" uuid="89fcbf68-61e7-489f-9b48-a3949848d721">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\amado\IdeaProjects\ClimaticMovie\weather_data.db</jdbc-url>
+>>>>>>> feature/weather-api
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />
       </jdbc-additional-properties>

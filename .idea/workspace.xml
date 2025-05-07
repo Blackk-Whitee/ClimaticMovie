@@ -51,7 +51,7 @@
     "JUnit.SQLiteMovieRepositoryTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/weather-api",
+    "git-widget-placeholder": "develop",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
     "node.js.detected.package.eslint": "true",
@@ -201,6 +201,7 @@
       <workItem from="1746009643606" duration="18077000" />
       <workItem from="1746442836370" duration="19285000" />
       <workItem from="1746636716031" duration="456000" />
+      <workItem from="1746637180729" duration="194000" />
     </task>
     <servers />
   </component>
