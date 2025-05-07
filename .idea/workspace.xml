@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba8dd7a8-4232-4026-a409-5435f95887e3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/feeder-movie/src/main/java/infrastructure/Control.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vE0Vd3Nm5Ux1IoOrPCE3jYnlTp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.MAIN.executor": "Run",
+    "Application.Main.executor": "Run",
+    "JUnit.FetchGenresTest.executor": "Run",
+    "JUnit.FetchMoviesTest (1).executor": "Run",
+    "JUnit.FetchMoviesTest.executor": "Run",
+    "JUnit.GenreApiClientTest.executor": "Run",
+    "JUnit.MovieApiClientTest (1).executor": "Run",
+    "JUnit.MovieApiClientTest.executor": "Run",
+    "JUnit.SQLiteConnectionTest.executor": "Run",
+    "JUnit.SQLiteGenreRepositoryTest.executor": "Run",
+    "JUnit.SQLiteMovieRepositoryTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/weather-api",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="infrastructure.api" />
+      <recent name="infrastructure" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\aimar\IdeaProjects\ClimaticMovie\feeder-movie\src\main\resources" />
+      <recent name="C:\Users\aimar\IdeaProjects\ClimaticMovie\feeder-movie" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="infrastructure" />
+      <recent name="infrastructure.db" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MAIN">
+    <configuration name="MAIN" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-24" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="feeder-movie" />
+      <option name="PROGRAM_PARAMETERS" value="fad78be9b3ab76184df0846b4baa0ba1 jdbc:sqlite:movies.sqlite tcp://localhost:61616 movies.Trending" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FetchGenresTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feeder-movie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FetchGenresTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FetchMoviesTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feeder-movie" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FetchMoviesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FetchMoviesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feeder-movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="core_usecases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="core_usecases" />
+      <option name="MAIN_CLASS_NAME" value="core_usecases.FetchMoviesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLiteConnectionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feeder-movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infrastructure.db.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="infrastructure.db" />
+      <option name="MAIN_CLASS_NAME" value="infrastructure.db.SQLiteConnectionTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TmdbMovieProviderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="feeder-movie" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="infrastructure.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="infrastructure.api" />
+      <option name="MAIN_CLASS_NAME" value="infrastructure.api.TmdbMovieProviderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MAIN" />
+      <item itemvalue="JUnit.TmdbMovieProviderTest" />
+      <item itemvalue="JUnit.FetchGenresTest" />
+      <item itemvalue="JUnit.FetchMoviesTest" />
+      <item itemvalue="JUnit.FetchMoviesTest (1)" />
+      <item itemvalue="JUnit.SQLiteConnectionTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SQLiteConnectionTest" />
+        <item itemvalue="JUnit.FetchMoviesTest (1)" />
+        <item itemvalue="JUnit.FetchGenresTest" />
+        <item itemvalue="JUnit.FetchMoviesTest" />
+        <item itemvalue="JUnit.TmdbMovieProviderTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba8dd7a8-4232-4026-a409-5435f95887e3" name="Changes" comment="" />
+      <created>1743694951447</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743694951447</updated>
+      <workItem from="1743694954177" duration="6956000" />
+      <workItem from="1743724032278" duration="6000" />
+      <workItem from="1743724048892" duration="2000" />
+      <workItem from="1744021670352" duration="14525000" />
+      <workItem from="1744056412505" duration="13000" />
+      <workItem from="1744214654672" duration="6450000" />
+      <workItem from="1744309597864" duration="2829000" />
+      <workItem from="1745401488072" duration="47985000" />
+      <workItem from="1745969440181" duration="5000" />
+      <workItem from="1746009643606" duration="18077000" />
+      <workItem from="1746442836370" duration="19285000" />
+      <workItem from="1746636716031" duration="456000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/feeder-movie" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
