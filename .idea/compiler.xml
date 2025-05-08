@@ -9,5 +9,8 @@
         <module name="feeder-movie" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="event-store-builder" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>
