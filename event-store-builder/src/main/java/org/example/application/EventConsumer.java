@@ -11,19 +11,25 @@ import javax.jms.Message;
 import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 import java.time.Instant;
+import java.util.List;
 
 public class EventConsumer implements MessageListener {
     private final EventStorageService storageService;
     private final String brokerUrl;
+    private final List<String> topics;
 
-    public EventConsumer(EventStorageService storageService, String brokerUrl) {
+
+    public EventConsumer(EventStorageService storageService, String brokerUrl, List<String> topics) {
         this.storageService = storageService;
         this.brokerUrl = brokerUrl;
+        this.topics = topics;
     }
 
     public void start() {
-        ActiveMQEventConsumer consumer = new ActiveMQEventConsumer(brokerUrl, "Weather", this);
-        consumer.listen();
+        for (String topic : topics) {
+            ActiveMQEventConsumer consumer = new ActiveMQEventConsumer(brokerUrl, topic, this);
+            consumer.listen();
+        }
     }
 
     @Override
