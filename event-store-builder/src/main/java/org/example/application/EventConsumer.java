@@ -26,10 +26,8 @@ public class EventConsumer implements MessageListener {
     }
 
     public void start() {
-        for (String topic : topics) {
-            ActiveMQEventConsumer consumer = new ActiveMQEventConsumer(brokerUrl, topic, this);
-            consumer.listen();
-        }
+        ActiveMQEventConsumer consumer = new ActiveMQEventConsumer(brokerUrl, topics, this);
+        consumer.listen();
     }
 
     @Override

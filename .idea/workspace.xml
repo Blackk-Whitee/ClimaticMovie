@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="" />
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/EventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/EventConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/EventConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/Main.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +44,7 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2wmGHWwLER5FeJeoG0DsVLK2PvN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +56,7 @@
     "git-widget-placeholder": "feature/event-store-builder",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,7 +72,7 @@
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
       <module name="event-store-builder" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;tcp://localhost:61616&quot;" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;tcp://localhost:61616&quot; movies.Trending Weather" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
