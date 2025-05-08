@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ClimaticMovie.iml" filepath="$PROJECT_DIR$/.idea/ClimaticMovie.iml" />
-      <module fileurl="file://$PROJECT_DIR$/event-store-builder/event-store-builder.iml" filepath="$PROJECT_DIR$/event-store-builder/event-store-builder.iml" />
-    </modules>
-  </component>
-</project>
