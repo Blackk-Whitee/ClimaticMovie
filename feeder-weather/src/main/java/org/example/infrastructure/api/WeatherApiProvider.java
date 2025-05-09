@@ -14,6 +14,7 @@ public interface WeatherApiProvider {
     );
 
     class WeatherApiResponse {
+        public String topic;
         Current current;
         Location location;
 

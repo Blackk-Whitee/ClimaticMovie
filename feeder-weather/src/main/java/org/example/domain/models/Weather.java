@@ -5,6 +5,7 @@ import java.time.LocalDateTime;
 import java.util.Locale;
 
 public class Weather {
+    private String topic;
     private String city;
     private double temperature;
     private int humidity;
@@ -17,7 +18,8 @@ public class Weather {
 
     private LocalDateTime timestamp;
 
-    public Weather(String name, double tempC, int humidity, String text, double windKph, LocalDateTime now) {
+    public Weather(String topic, String name, double tempC, int humidity, String text, double windKph, LocalDateTime now) {
+        this.topic = topic;
         this.city = name;
         this.temperature = tempC;
         this.humidity = humidity;
@@ -78,4 +80,7 @@ public class Weather {
         this.timestamp = timestamp;
     }
 
+    public String getTopic() {return topic;}
+
+    public void setTopic(String topic) {this.topic = topic;}
 }

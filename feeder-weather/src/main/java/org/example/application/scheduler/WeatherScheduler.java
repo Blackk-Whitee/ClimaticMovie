@@ -33,9 +33,9 @@ public class WeatherScheduler {
     private Trigger getHourlyTrigger() {
         return newTrigger().withIdentity("hourlyTrigger")
                 .withSchedule(
-                        cronSchedule("0 0 * * * ?") // Ejecución cada hora en punto
+                        cronSchedule("0 0 * * * ?")
                 )
-                .forJob(job)                .build();
+                .forJob(job).build();
     }
 
     public void start() throws SchedulerException {
