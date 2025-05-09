@@ -36,6 +36,7 @@ public class EventConsumer implements MessageListener {
             String json = ((TextMessage) message).getText();
             Event event = parseToEvent(json);
             storageService.processAndStoreEvent(event);
+            System.out.println("[CONSUMER] Mensaje recibido. ID: " + message.getJMSMessageID());
         } catch (Exception e) {
             System.err.println("Error procesando mensaje: " + e.getMessage());
         }
