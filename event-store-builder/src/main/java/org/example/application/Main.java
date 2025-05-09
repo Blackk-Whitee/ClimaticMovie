@@ -6,6 +6,7 @@ import org.example.infrastructure.storage.FileEventWriter;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +19,7 @@ public class Main {
 
         consumer.start();
         System.out.println("EventStoreBuilder iniciado...");
+        Runtime.getRuntime().addShutdownHook(new Thread(consumer::shutdown));
+        new Scanner(System.in).nextLine();
     }
 }
