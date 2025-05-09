@@ -17,6 +17,7 @@ public class EventConsumer implements MessageListener {
     private final EventStorageService storageService;
     private final String brokerUrl;
     private final List<String> topics;
+    private ActiveMQEventConsumer consumer;
 
 
     public EventConsumer(EventStorageService storageService, String brokerUrl, List<String> topics) {
@@ -26,8 +27,14 @@ public class EventConsumer implements MessageListener {
     }
 
     public void start() {
-        ActiveMQEventConsumer consumer = new ActiveMQEventConsumer(brokerUrl, topics, this);
+        this.consumer = new ActiveMQEventConsumer(brokerUrl, topics, this);
         consumer.listen();
+    }
+
+    public void shutdown() {
+        if (consumer != null) {
+            consumer.shutdown();
+        }
     }
 
     @Override

@@ -10,6 +10,9 @@ public class ActiveMQEventConsumer {
     private final List<String> topicNames;
     private final MessageListener listener;
 
+    private Connection connection; // mantener viva
+    private Session session;
+
     public ActiveMQEventConsumer(String brokerUrl, List<String> topicNames, MessageListener listener) {
         this.brokerUrl = brokerUrl;
         this.topicNames = topicNames;
@@ -18,8 +21,8 @@ public class ActiveMQEventConsumer {
 
     public void listen() {
         try {
-            Connection connection = getConnection();
-            Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+            this.connection = getConnection();
+            this.session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
             for (String topicName : topicNames) {
                 Topic topic = session.createTopic(topicName);
@@ -31,6 +34,17 @@ public class ActiveMQEventConsumer {
             throw new RuntimeException("Error al configurar ActiveMQ", e);
         }
     }
+
+    public void shutdown() {
+        try {
+            if (session != null) session.close();
+            if (connection != null) connection.close();
+        } catch (JMSException e) {
+            System.err.println("Error cerrando conexión: " + e.getMessage());
+        }
+    }
+
+
 
     private Connection getConnection() throws JMSException {
         ConnectionFactory factory = new ActiveMQConnectionFactory(brokerUrl);
