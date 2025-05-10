@@ -40,11 +40,14 @@ public class EventConsumer implements MessageListener {
     @Override
     public void onMessage(Message message) {
         try {
+            System.out.println("Nuevo mensaje recibido: " + Instant.now());
             String json = ((TextMessage) message).getText();
             Event event = parseToEvent(json);
             storageService.processAndStoreEvent(event);
+            System.out.println("Evento procesado: " + event.getTopic() + " - " + event.getTimestamp());
         } catch (Exception e) {
             System.err.println("Error procesando mensaje: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 

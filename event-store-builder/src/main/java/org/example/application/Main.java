@@ -20,6 +20,13 @@ public class Main {
         consumer.start();
         System.out.println("EventStoreBuilder iniciado...");
         Runtime.getRuntime().addShutdownHook(new Thread(consumer::shutdown));
-        new Scanner(System.in).nextLine();
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+                break;
+            }
+        }
     }
 }
