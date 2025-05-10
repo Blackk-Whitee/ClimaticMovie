@@ -37,6 +37,7 @@ public class EventConsumer implements MessageListener {
         }
     }
 
+    // En EventConsumer.java
     @Override
     public void onMessage(Message message) {
         try {
@@ -44,7 +45,10 @@ public class EventConsumer implements MessageListener {
             String json = ((TextMessage) message).getText();
             Event event = parseToEvent(json);
             storageService.processAndStoreEvent(event);
-            System.out.println("Evento procesado: " + event.getTopic() + " - " + event.getTimestamp());
+
+            // Confirma explícitamente el mensaje
+            message.acknowledge();
+            System.out.println("Evento procesado y confirmado: " + event.getTopic());
         } catch (Exception e) {
             System.err.println("Error procesando mensaje: " + e.getMessage());
             e.printStackTrace();
