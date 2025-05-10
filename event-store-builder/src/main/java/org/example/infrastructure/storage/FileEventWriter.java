@@ -25,7 +25,8 @@ public class FileEventWriter implements EventRepository {
                     filePath,
                     event.getRawData() + System.lineSeparator(),
                     StandardOpenOption.CREATE,
-                    StandardOpenOption.APPEND
+                    StandardOpenOption.APPEND,
+                    StandardOpenOption.DSYNC
             );
 
             System.out.println("Evento guardado exitosamente"); // Debug
