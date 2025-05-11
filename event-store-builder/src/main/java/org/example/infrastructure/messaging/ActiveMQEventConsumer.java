@@ -24,7 +24,7 @@ public class ActiveMQEventConsumer {
         try {
             this.connection = getConnection();
             // Cambia a Session.CLIENT_ACKNOWLEDGE para control manual
-            this.session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+            this.session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
 
             for (String topicName : topicNames) {
                 Topic topic = session.createTopic(topicName);
