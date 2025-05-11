@@ -24,11 +24,11 @@ public class ActiveMQEventConsumer {
         try {
             this.connection = getConnection();
             // Cambia a Session.CLIENT_ACKNOWLEDGE para control manual
-            this.session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
+            this.session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
 
             for (String topicName : topicNames) {
                 Topic topic = session.createTopic(topicName);
-                MessageConsumer consumer = session.createDurableConsumer(topic, "subscription-" + topicName);
+                MessageConsumer consumer = session.createConsumer(topic);
                 consumer.setMessageListener(listener);
             }
         } catch (JMSException e) {
@@ -44,8 +44,6 @@ public class ActiveMQEventConsumer {
             System.err.println("Error cerrando conexión: " + e.getMessage());
         }
     }
-
-
 
     private Connection getConnection() throws JMSException {
         ConnectionFactory factory = new ActiveMQConnectionFactory(brokerUrl);
