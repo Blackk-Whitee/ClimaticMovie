@@ -28,7 +28,7 @@ public class ActiveMQEventConsumer {
 
             for (String topicName : topicNames) {
                 Topic topic = session.createTopic(topicName);
-                MessageConsumer consumer = session.createConsumer(topic);
+                MessageConsumer consumer = session.createDurableConsumer(topic, "subscription-" + topicName);
                 consumer.setMessageListener(listener);
             }
         } catch (JMSException e) {
