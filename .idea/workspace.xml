@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="" />
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
