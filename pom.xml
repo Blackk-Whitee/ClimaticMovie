@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>feeder-weather</module>
+        <module>feeder-movie</module>
     </modules>
 
     <properties>
