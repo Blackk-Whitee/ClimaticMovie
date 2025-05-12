@@ -11,5 +11,9 @@
         <module name="event-store-builder" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ClimaticMovie" target="22" />
+      <module name="feeder-weather" target="22" />
+    </bytecodeTargetLevel>
   </component>
 </project>
