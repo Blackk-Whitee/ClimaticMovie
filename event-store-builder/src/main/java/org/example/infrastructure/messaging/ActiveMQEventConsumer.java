@@ -10,7 +10,7 @@ public class ActiveMQEventConsumer {
     private final List<String> topicNames;
     private final MessageListener listener;
 
-    private Connection connection; // mantener viva
+    private Connection connection;
     private Session session;
 
     public ActiveMQEventConsumer(String brokerUrl, List<String> topicNames, MessageListener listener) {
@@ -19,21 +19,24 @@ public class ActiveMQEventConsumer {
         this.listener = listener;
     }
 
-    // En ActiveMQEventConsumer.java
     public void listen() {
         try {
             this.connection = getConnection();
-            // Cambia a Session.CLIENT_ACKNOWLEDGE para control manual
             this.session = connection.createSession(false, Session.CLIENT_ACKNOWLEDGE);
 
             for (String topicName : topicNames) {
-                Topic topic = session.createTopic(topicName);
-                MessageConsumer consumer = session.createDurableConsumer(topic, "subscription-" + topicName);
-                consumer.setMessageListener(listener);
+                setListener(topicName);
             }
+
         } catch (JMSException e) {
             throw new RuntimeException("Error al configurar ActiveMQ", e);
         }
+    }
+
+    private void setListener(String topicName) throws JMSException {
+        Topic topic = session.createTopic(topicName);
+        MessageConsumer consumer = session.createDurableConsumer(topic, "subscription-" + topicName);
+        consumer.setMessageListener(listener);
     }
 
     public void shutdown() {
