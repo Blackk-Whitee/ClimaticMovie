@@ -19,7 +19,8 @@ public class Main {
 
         String apiKey = args[0];
         String brokerUrl = args[2];
-        String[] cities = LeerCSVJava("C:/Users/amado/OneDrive - Universidad de Las Palmas de Gran Canaria/Escritorio/Universidad/2º Año/DACD/Proyecto/Ciudades.csv");
+        String path = args[3];
+        String[] cities = LeerCSVJava(path);
         tryCatch(apiKey, cities, brokerUrl);
     }
 

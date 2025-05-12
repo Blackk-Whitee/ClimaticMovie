@@ -33,7 +33,7 @@ public class ActiveMQEventStorer {
 
     public void publishWeatherEvent(Weather weather, String source) {
         try {
-            String eventJson = buildEventJson(weather, source);
+            String eventJson = buildEventJson(weather, source, topicName);
             TextMessage message = session.createTextMessage(eventJson);
             producer.send(message);
             System.out.println("[PUBLISHER] Evento enviado al topic '" + topicName + "': " + eventJson);
@@ -42,9 +42,10 @@ public class ActiveMQEventStorer {
         }
     }
 
-    private String buildEventJson(Weather weather, String source) {
+    private String buildEventJson(Weather weather, String source, String topicName) {
         return String.format(
-                "{\"ts\":\"%s\", \"ss\":\"%s\", \"city\":\"%s\", \"temperature\":%s, \"humidity\":%d, \"condition\":\"%s\"}",
+                "{\"topic\":\"%s\", \"ts\":\"%s\", \"ss\":\"%s\", \"city\":\"%s\", \"temperature\":%s, \"humidity\":%d, \"condition\":\"%s\"}",
+                topicName,
                 Instant.now().toString(),
                 source,
                 weather.getCity(), weather.getTemperatureAsString(), weather.getHumidity(), weather.getCondition()

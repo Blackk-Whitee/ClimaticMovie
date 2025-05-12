@@ -27,7 +27,7 @@ public class SQLiteEventStorer {
 
     public void saveWeather(Weather weather) throws SQLException {
         String sql = """
-            INSERT INTO weather_data 
+            INSERT INTO weather_data
             (city, temperature, humidity, condition, wind_speed, timestamp)
             VALUES (?, ?, ?, ?, ?, ?)""";
 

@@ -24,6 +24,6 @@ public class WeatherProvider {
         if (!response.isSuccessful()) throw new Exception("API Error: " + response.code());
 
         var apiResponse = response.body();
-        return new Weather(apiResponse.location.name, apiResponse.current.tempC, apiResponse.current.humidity, apiResponse.current.condition.text, apiResponse.current.windKph, LocalDateTime.now());
+        return new Weather(apiResponse.topic, apiResponse.location.name, apiResponse.current.tempC, apiResponse.current.humidity, apiResponse.current.condition.text, apiResponse.current.windKph, LocalDateTime.now());
     }
 }
