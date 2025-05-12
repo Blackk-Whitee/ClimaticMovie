@@ -39,6 +39,7 @@ public class TmdbMovieProvider implements MovieProvider{
 
     private Movie mapToMovie(JSONObject obj) {
         return new Movie(
+                "movies.Trending",
                 Instant.now().toString(),                     // ts
                 "feeder movie",                   // ss (valor por defecto o personalizado)
                 obj.getString("title"),            // title
