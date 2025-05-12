@@ -3,8 +3,8 @@ package org.example.application.scheduler;
 import org.example.application.controller.Control;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
-import java.util.Set;
-import static org.quartz.CronScheduleBuilder.dailyAtHourAndMinute;
+
+import static org.quartz.CronScheduleBuilder.cronSchedule;
 import static org.quartz.JobBuilder.*;
 import static org.quartz.TriggerBuilder.*;
 
@@ -19,9 +19,8 @@ public class WeatherScheduler {
 
         this.job = newJob(WeatherJob.class).withIdentity("weatherJob").usingJobData(jobData).build();
 
-        Trigger morningTrigger = getMorningTrigger();
-        Trigger eveningTrigger = getEveningTrigger();
-        scheduler.scheduleJob(job, Set.of(morningTrigger, eveningTrigger), true);
+        Trigger hourlyTrigger = getHourlyTrigger();
+        scheduler.scheduleJob(job, hourlyTrigger);
     }
 
     private static JobDataMap getJobDataMap(String[] cities, Control controller) {
@@ -31,20 +30,12 @@ public class WeatherScheduler {
         return jobData;
     }
 
-    private Trigger getEveningTrigger() {
-        return newTrigger()
-                .withIdentity("eveningTrigger")
-                .withSchedule(dailyAtHourAndMinute(19, 51)) // 7:00 PM
-                .forJob(job)
-                .build();
-    }
-
-    private Trigger getMorningTrigger() {
-        return newTrigger()
-                .withIdentity("morningTrigger")
-                .withSchedule(dailyAtHourAndMinute(7, 0)) // 7:00 AM
-                .forJob(job)
-                .build();
+    private Trigger getHourlyTrigger() {
+        return newTrigger().withIdentity("hourlyTrigger")
+                .withSchedule(
+                        cronSchedule("0 0 * * * ?")
+                )
+                .forJob(job).build();
     }
 
     public void start() throws SchedulerException {
