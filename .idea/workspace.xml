@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/EventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/EventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/messaging/ActiveMQEventConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/storage/FileEventWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/infrastructure/storage/FileEventWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/application/scheduler/WeatherScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/application/scheduler/WeatherScheduler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,8 +47,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.main-weather.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#1 on feature/event-store-builder",
+    "git-widget-placeholder": "#2 on develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
@@ -66,7 +64,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
       <module name="event-store-builder" />
@@ -75,19 +73,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ClimaticMovie" />
+    <configuration name="main-weather" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
+      <module name="feeder-weather" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;80d374e907784355b7f144840251903&quot; &quot;jdbc:sqlite:weather_data.db&quot; &quot;tcp://localhost:61616&quot; &quot;C:\Users\amado\OneDrive - Universidad de Las Palmas de Gran Canaria\Escritorio\Universidad\2º Año\DACD\Proyecto\Ciudades.csv&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ClimaticMovie" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.main-weather" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
