@@ -8,10 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="feeder-movie" />
         <module name="feeder-weather" />
+        <module name="event-store-builder" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="event-store-builder" target="22" />
-    </bytecodeTargetLevel>
   </component>
 </project>

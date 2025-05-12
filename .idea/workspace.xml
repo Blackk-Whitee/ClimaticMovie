@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33539e2e-cee9-400e-86b6-0043eb2a0bf3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eventstore/movies.Trending/feeder movie/20250512.events" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/infrastructure/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/infrastructure/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +28,33 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.main-event.executor": "Run",
+    "Application.main-movie.executor": "Run",
     "git-widget-placeholder": "develop",
+    "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.main-movie">
+    <configuration name="main-event" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
+      <module name="event-store-builder" />
+      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 movies.Trending Weather" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main-movie" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="feeder-movie" />
+      <option name="PROGRAM_PARAMETERS" value="fad78be9b3ab76184df0846b4baa0ba1 sqlite tcp://localhost:61616 movies.Trending" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="feeder-movie" />
       <method v="2">
@@ -41,6 +68,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.main-event" />
+      <item itemvalue="Application.main-movie" />
+    </list>
   </component>
   <component name="TaskManager">
     <servers />
