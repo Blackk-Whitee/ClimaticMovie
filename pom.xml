@@ -12,6 +12,7 @@
         <module>feeder-weather</module>
         <module>feeder-movie</module>
         <module>event-store-builder</module>
+        <module>business-unit</module>
     </modules>
 
     <properties>
