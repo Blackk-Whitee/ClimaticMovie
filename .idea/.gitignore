@@ -6,10 +6,10 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-<<<<<<< HEAD
+
 # Ignorar el archivo .env
 /src/main/resources/.env
 # Ignorar el archivo pom.xml en la raíz del proyecto
 /pom.xml
-=======
->>>>>>> feature/weather-api
+
+datamart.db
