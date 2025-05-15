@@ -5,17 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/application/scheduler/WeatherScheduler.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/application/scheduler/WeatherScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/Recommendation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/Weather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/RecommendationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/resources/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,12 +75,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.main-business.executor": "Run",
     "Application.main-weather.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#2 on develop",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/business-unit",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
+    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -62,13 +92,26 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.main-business">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
       <module name="event-store-builder" />
       <option name="PROGRAM_PARAMETERS" value="&quot;tcp://localhost:61616&quot; movies.Trending Weather" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main-business" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.aplication.Main" />
+      <module name="business-unit" />
+      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,13 +127,14 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.main-weather" />
+      <item itemvalue="Application.main-business" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -108,6 +152,7 @@
       <workItem from="1746639896402" duration="747000" />
       <workItem from="1746640776686" duration="2997000" />
       <workItem from="1746651894453" duration="1702000" />
+      <workItem from="1747298854712" duration="19134000" />
     </task>
     <servers />
   </component>
@@ -125,7 +170,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/event-store-builder" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
