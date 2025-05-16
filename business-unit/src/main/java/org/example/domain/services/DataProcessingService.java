@@ -56,14 +56,15 @@ public class DataProcessingService {
         Movie movie = parseMovieEvent(jsonMovie);
         if (movie != null) {
             List<Movie> currentMovies = datamart.getAllMovies();
-
-            // Añadir nueva película (asumiendo que no hay duplicados)
+            // Eliminar si ya existe una película con el mismo título
+            currentMovies.removeIf(m -> m.getTitle().equalsIgnoreCase(movie.getTitle()));
+            // Añadir la nueva película
             currentMovies.add(movie);
-
             // Actualizar datamart con clima existente
             updateDatamart(datamart.getAllWeatherData(), currentMovies);
         }
     }
+
 
     private void updateDatamart(List<Weather> weatherData, List<Movie> movieData) {
         // Actualizar tablas de datos crudos

@@ -1,4 +1,4 @@
-package org.example.aplication;
+package org.example;
 
 import org.example.aplication.controller.Control;
 

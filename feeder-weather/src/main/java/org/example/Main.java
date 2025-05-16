@@ -1,4 +1,4 @@
-package org.example.application;
+package org.example;
 
 import org.example.application.controller.Control;
 import org.example.infrastructure.api.WeatherProvider;
