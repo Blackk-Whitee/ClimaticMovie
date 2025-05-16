@@ -1,5 +1,5 @@
 package infrastructure.api;
-import core.Movie;
+import domain.models.Movie;
 import org.json.JSONObject;
 import java.net.URL;
 import java.time.Instant;

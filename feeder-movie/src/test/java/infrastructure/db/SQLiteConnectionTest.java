@@ -1,6 +1,6 @@
 package infrastructure.db;
 
-import core.Movie;
+import domain.models.Movie;
 import infrastructure.store.SQLiteConnection;
 import org.junit.jupiter.api.*;
 import java.sql.*;
