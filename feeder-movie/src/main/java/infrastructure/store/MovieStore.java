@@ -1,6 +1,6 @@
 package infrastructure.store;
 
-import core.Movie;
+import domain.models.Movie;
 
 public interface MovieStore {
 

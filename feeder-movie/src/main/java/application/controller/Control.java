@@ -1,5 +1,5 @@
-package infrastructure;
-import core.Movie;
+package application.controller;
+import domain.models.Movie;
 import infrastructure.api.MovieProvider;
 import infrastructure.store.MovieStore;
 import org.quartz.*;
