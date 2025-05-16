@@ -51,7 +51,6 @@ public class SQLiteDatamart {
 
             // Limpiar tabla existente
             clearStmt.execute();
-
             // Insertar nuevos datos
             for (Weather weather : weatherData) {
                 insertStmt.setString(1, weather.getCity());
