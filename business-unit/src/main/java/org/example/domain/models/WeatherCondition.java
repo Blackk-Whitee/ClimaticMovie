@@ -14,19 +14,19 @@ public class WeatherCondition {
         map.put("Partly cloudy", Arrays.asList("Aventura", "Comedia", "Familia", "Fantasía", "Animación", "Música"));
 
 // Condiciones lluviosas
-        map.put("Light rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Light drizzle", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Light rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Patchy light drizzle", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Patchy light rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Heavy rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Heavy rain at times", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Torrential rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Moderate rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Moderate rain at times", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Moderate or heavy rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Moderate or heavy rain with thunder", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
-        map.put("Patchy rain possible", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental", "Música"));
+        map.put("Light rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Light drizzle", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Light rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Patchy light drizzle", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Patchy light rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Heavy rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Heavy rain at times", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Torrential rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Moderate rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Moderate rain at times", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Moderate or heavy rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Moderate or heavy rain with thunder", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
+        map.put("Patchy rain possible", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
 
 // Condiciones nubladas
         map.put("Cloudy", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));

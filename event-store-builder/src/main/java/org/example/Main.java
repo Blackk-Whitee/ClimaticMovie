@@ -1,5 +1,6 @@
-package org.example.application;
+package org.example;
 
+import org.example.application.EventConsumer;
 import org.example.domain.repositories.EventRepository;
 import org.example.domain.services.EventStorageService;
 import org.example.infrastructure.storage.FileEventWriter;
