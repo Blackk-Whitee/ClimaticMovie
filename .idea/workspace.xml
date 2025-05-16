@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamart.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/infrastructure/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/infrastructure/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/Control.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/src/main/java/org/example/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/business-unit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,7 +58,7 @@
     "Application.main_movie.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/business-unit",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
