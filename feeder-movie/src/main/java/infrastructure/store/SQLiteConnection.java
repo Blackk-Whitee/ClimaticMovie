@@ -1,6 +1,6 @@
 package infrastructure.store;
 
-import core.Movie;
+import domain.models.Movie;
 import java.sql.*;
 import java.util.List;
 import java.util.Map;

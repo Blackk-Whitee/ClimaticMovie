@@ -1,6 +1,6 @@
 import infrastructure.store.ActiveMQMovieStore;
 import infrastructure.api.TmdbMovieProvider;
-import infrastructure.Control;
+import application.controller.Control;
 import org.quartz.SchedulerException;
 
 public class Main {

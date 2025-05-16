@@ -1,11 +1,13 @@
-package infrastructure;
-import core.Movie;
+package application.controller;
+import domain.models.Movie;
 import infrastructure.api.MovieProvider;
 import infrastructure.store.MovieStore;
 import org.quartz.*;
 import org.quartz.impl.StdSchedulerFactory;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Control {
     private final MovieProvider provider;
@@ -43,7 +45,18 @@ public class Control {
 
             // Ejecuta la lógica
             List<Movie> movies = provider.provide();
-            movies.forEach(store::save);
+
+            Set<String> sentTitles = new HashSet<>();
+
+            movies.stream()
+                    .filter(movie -> {
+                        boolean isDuplicate = sentTitles.contains(movie.getTitle());
+                        if (!isDuplicate) sentTitles.add(movie.getTitle());
+                        return !isDuplicate;
+                    })
+                    .forEach(store::save);
+
+            System.out.println("Películas enviadas: " + sentTitles.size());
             System.out.println(movies);
         }
     }

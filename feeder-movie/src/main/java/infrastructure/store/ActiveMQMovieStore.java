@@ -1,11 +1,8 @@
 package infrastructure.store;
 import com.google.gson.Gson;
-import core.Movie;
+import domain.models.Movie;
 import jakarta.jms.*;
 import org.apache.activemq.ActiveMQConnectionFactory;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 public class ActiveMQMovieStore implements MovieStore {
     private final String url;
