@@ -26,6 +26,9 @@ public class BusinessUnitActiveMQConsumer {
                 Destination destination = message.getJMSDestination();
                 if (destination instanceof Topic) {
                     String topicName = ((Topic) destination).getTopicName();
+                    System.out.println("[INFO] Mensaje recibido en topic: " + topicName);
+                    System.out.println("[DEBUG] Contenido: " + json);
+
                     switch (topicName) {
                         case "Weather": // Clima
                             control.updateWeatherData(json);
@@ -37,6 +40,7 @@ public class BusinessUnitActiveMQConsumer {
                             System.err.println("Topic desconocido: " + topicName);
                     }
                 }
+                message.acknowledge();
             } catch (JMSException e) {
                 System.err.println("Error procesando mensaje: " + e.getMessage());
             }
