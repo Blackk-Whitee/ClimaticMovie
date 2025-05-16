@@ -27,8 +27,7 @@ public class SQLiteDatamart {
 
             // Tabla de películas
             stmt.execute("CREATE TABLE IF NOT EXISTS movies (" +
-                    "id INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                    "title TEXT, " +
+                    "title TEXT PRIMARY KEY, " +
                     "releaseDate TEXT, " +
                     "voteAverage REAL, " +
                     "genres TEXT)");
@@ -96,7 +95,7 @@ public class SQLiteDatamart {
         try (Connection conn = DriverManager.getConnection(DB_URL);
              PreparedStatement clearStmt = conn.prepareStatement("DELETE FROM movies");
              PreparedStatement insertStmt = conn.prepareStatement(
-                     "INSERT INTO movies (title, releaseDate, voteAverage, genres) VALUES (?, ?, ?, ?)")) {
+                     "INSERT OR REPLACE INTO movies (title, releaseDate, voteAverage, genres) VALUES (?, ?, ?, ?)")) {
 
             // Limpiar tabla existente
             clearStmt.execute();

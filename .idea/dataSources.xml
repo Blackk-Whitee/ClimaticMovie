@@ -19,7 +19,7 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="datamart" uuid="16a0a7b8-d247-49aa-bab6-4a19d63607be">
+    <data-source source="LOCAL" name="datamart" uuid="61e4c564-f1e2-4dea-8f2a-a15c1df274e1">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
