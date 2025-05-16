@@ -1,4 +1,4 @@
-package core;
+package domain.models;
 
 import java.time.Instant;
 import java.util.List;

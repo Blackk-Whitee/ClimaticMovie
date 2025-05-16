@@ -1,6 +1,6 @@
 package infrastructure.api;
 
-import core.Movie;
+import domain.models.Movie;
 
 import java.util.List;
 
