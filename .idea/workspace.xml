@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/test/java/org/example/application/EventConsumerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/test/java/org/example/domain/models/EventTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/test/java/org/example/domain/services/EventStorageServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/event-store-builder/src/test/java/org/example/infrastructure/storage/FileEventWriterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/EventAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/MovieParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/WeatherParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/EventConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/application/EventConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/models/Event.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/models/Event.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/repositories/EventRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/repositories/EventRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/services/EventStorageService.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/domain/services/EventStorageService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/infrastructure/messaging/ActiveMQEventConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/infrastructure/messaging/ActiveMQEventConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/infrastructure/storage/FileEventWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/infrastructure/storage/FileEventWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +30,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -37,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="feature/business-unit" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,14 +69,16 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.EventStorageServiceTest.executor": "Run",
-    "JUnit.EventTest.executor": "Run",
-    "JUnit.FileEventWriterTest.executor": "Run",
+    "Application.main-business.executor": "Run",
+    "Application.main-event.executor": "Run",
+    "Application.main-weather.executor": "Run",
+    "Application.main_movie.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature/event-store-builder",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/business-unit",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aimar/OneDrive/Escritorio/DACD/publisher-subscriber",
+    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,18 +88,34 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
+    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main_event">
+  <component name="RunManager" selected="Application.main-business">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.application.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
       <option name="PROGRAM_PARAMETERS" value="&quot;tcp://localhost:61616&quot; movies.Trending Weather" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main_event" type="Application" factoryName="Application">
+    <configuration name="main-business" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="business-unit" />
+      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 jdbc:sqlite:datamart.db" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main-event" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
       <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 movies.Trending Weather" />
@@ -105,86 +123,46 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventStorageServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="event-store-builder" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.domain.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH" value="21" />
-      <option name="PACKAGE_NAME" value="org.example.domain.services" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.EventStorageServiceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="main-weather" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="feeder-weather" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;80d374e907784355b7f144840251903&quot; &quot;jdbc:sqlite:weather_data.db&quot; &quot;tcp://localhost:61616&quot; &quot;C:\Users\amado\OneDrive - Universidad de Las Palmas de Gran Canaria\Escritorio\Universidad\2º Año\DACD\Proyecto\Ciudades.csv&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EventTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="event-store-builder" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.domain.models.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.domain.models" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.models.EventTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FileEventWriterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="event-store-builder" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.infrastructure.storage.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.infrastructure.storage" />
-      <option name="MAIN_CLASS_NAME" value="org.example.infrastructure.storage.FileEventWriterTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="main_movie" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="feeder-movie" />
+      <option name="PROGRAM_PARAMETERS" value="fad78be9b3ab76184df0846b4baa0ba1 sqlite tcp://localhost:61616 movies.Trending" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="ClimaticMovie" />
+      <module name="business-unit" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ClimaticMovie" />
+      <module name="business-unit" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="Application.main_event" />
-      <item itemvalue="JUnit.EventStorageServiceTest" />
-      <item itemvalue="JUnit.EventTest" />
-      <item itemvalue="JUnit.FileEventWriterTest" />
+      <item itemvalue="Application.main-weather" />
+      <item itemvalue="Application.main-business" />
+      <item itemvalue="Application.main_movie" />
+      <item itemvalue="Application.main-event" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.EventStorageServiceTest" />
-        <item itemvalue="JUnit.EventTest" />
-        <item itemvalue="JUnit.FileEventWriterTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
       </set>
     </attachedChunks>
   </component>
@@ -202,6 +180,9 @@
       <workItem from="1746639896402" duration="747000" />
       <workItem from="1746640776686" duration="2997000" />
       <workItem from="1746651894453" duration="1702000" />
+      <workItem from="1747298854712" duration="19134000" />
+      <workItem from="1747343177885" duration="5322000" />
+      <workItem from="1747392476423" duration="3621000" />
     </task>
     <servers />
   </component>
@@ -219,7 +200,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="feature/event-store-builder" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>

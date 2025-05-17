@@ -26,7 +26,6 @@ public class EventStoreReader {
                 logger.warn("No se encontró el directorio del topic: {}", topic);
                 return Collections.emptyList();
             }
-
             // Buscar archivos dentro de cualquier subdirectorio
             Optional<Path> latestFile = Files.walk(topicPath, Integer.MAX_VALUE)
                     .filter(path -> path.toString().endsWith(".events"))
@@ -36,14 +35,11 @@ public class EventStoreReader {
                 logger.info("No se encontraron archivos .events para el topic: {}", topic);
                 return Collections.emptyList();
             }
-
             logger.debug("Leyendo archivo más reciente: {}", latestFile.get());
             return Files.readAllLines(latestFile.get());
-
         } catch (IOException e) {
             logger.error("Error leyendo eventos del topic {}: {}", topic, e.getMessage(), e);
             return Collections.emptyList();
         }
     }
-
 }
