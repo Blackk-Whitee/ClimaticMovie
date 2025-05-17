@@ -9,7 +9,9 @@ public class Main {
             System.out.println("Ejemplo: java Main tcp://localhost:61616");
             return;
         }
+        String brokerUrl = args[0];
+        String dbUrl = args[1];
 
-        new Control().start(args[0]);
+        new Control(dbUrl).start(brokerUrl);
     }
 }
