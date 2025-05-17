@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/EventAccumulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/MovieParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/WeatherParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/business-unit" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,38 +54,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.main-business.executor": "Run",
-    "Application.main-event.executor": "Run",
-    "Application.main-weather.executor": "Run",
-    "Application.main_movie.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/business-unit",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-business.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-event.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-weather.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main_movie.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/business-unit&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aimar/IdeaProjects/ClimaticMovie&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.main-business">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
@@ -184,6 +172,15 @@
       <workItem from="1747343177885" duration="5322000" />
       <workItem from="1747392476423" duration="3621000" />
     </task>
+    <task id="LOCAL-00001" summary="merge with business-unit">
+      <option name="closed" value="true" />
+      <created>1747510780317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747510780317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

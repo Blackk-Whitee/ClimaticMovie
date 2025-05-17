@@ -22,7 +22,6 @@ public class DatamartUpdater {
     public void updateDatamart(List<Weather> weatherData, List<Movie> movieData) {
         datamart.updateWeatherData(weatherData);
         datamart.updateMovies(movieData);
-
         List<Recommendation> recommendations = recommendationService.generateRecommendations(weatherData, movieData);
         datamart.updateRecommendations(recommendations);
     }
