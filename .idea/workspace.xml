@@ -4,23 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/EventAccumulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/MovieParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/WeatherParser.java" afterDir="false" />
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Refactorization of the classes">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/cli/CLIInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/cli/CLIInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Recommendation.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Recommendation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/WeatherCondition.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/models/WeatherCondition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/DataProcessingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/DataProcessingService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/RecommendationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/RecommendationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/EventStoreReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/EventStoreReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/event-store-builder/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control$FetchDataJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control$FetchDataJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/domain/models/Movie.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/domain/models/Movie.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/api/MovieProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/api/MovieProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/api/TmdbMovieProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/api/TmdbMovieProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/ActiveMQMovieStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/ActiveMQMovieStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/MovieStore.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/MovieStore.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/SQLiteConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/SQLiteConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/SQLiteRepositoryInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/infrastructure/store/SQLiteRepositoryInterface.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +86,7 @@
     "Application.main_movie.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature/business-unit",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
@@ -98,7 +109,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main-business">
+  <component name="RunManager" selected="Application.main-event">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
@@ -213,6 +224,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Refactorization of the classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactorization of the classes" />
   </component>
 </project>
