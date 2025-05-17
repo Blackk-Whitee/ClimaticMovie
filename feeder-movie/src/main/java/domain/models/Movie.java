@@ -39,4 +39,6 @@ public class Movie {
     public String getReleaseDate() { return releaseDate; }
     public double getVoteAverage() { return voteAverage; }
     public List<String> getGenreIds() { return genres; }
+    public String getSs() { return ss; }
+    public Instant getTs() { return Instant.parse(ts); }
 }
