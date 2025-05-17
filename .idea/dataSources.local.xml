@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-243.26053.27">
-    <data-source name="movies" uuid="2cad0bba-a437-48f0-9ef0-00eeba9116ea">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" />
-      <schema-mapping />
-    </data-source>
-  </component>
-</project>
