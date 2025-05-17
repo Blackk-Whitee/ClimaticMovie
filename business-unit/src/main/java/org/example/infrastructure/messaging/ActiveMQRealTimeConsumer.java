@@ -35,7 +35,6 @@ public class ActiveMQRealTimeConsumer {
                 MessageConsumer consumer = session.createDurableConsumer(topic, "subscription-" + topicName + "-" + clientID);
                 consumer.setMessageListener(listener);
             }
-
             System.out.println("Suscripción duradera iniciada para clientID: " + clientID);
         } catch (JMSException e) {
             throw new RuntimeException("Error configurando ActiveMQ", e);
