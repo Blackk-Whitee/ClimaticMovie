@@ -35,23 +35,4 @@ public class DataProcessingService {
         datamartUpdater.updateDatamart(weatherData, movieData);
     }
 
-    public void processNewWeatherData(String jsonWeather) {
-        Weather weather = weatherParser.parse(jsonWeather);
-        if (weather != null) {
-            List<Weather> currentWeather = datamartUpdater.getDatamart().getAllWeatherData();
-            currentWeather.removeIf(w -> w.getCity().equals(weather.getCity()));
-            currentWeather.add(weather);
-            datamartUpdater.updateDatamart(currentWeather, datamartUpdater.getDatamart().getAllMovies());
-        }
-    }
-
-    public void processNewMovieData(String jsonMovie) {
-        Movie movie = movieParser.parse(jsonMovie);
-        if (movie != null) {
-            List<Movie> currentMovies = datamartUpdater.getDatamart().getAllMovies();
-            currentMovies.removeIf(m -> m.getTitle().equalsIgnoreCase(movie.getTitle()));
-            currentMovies.add(movie);
-            datamartUpdater.updateDatamart(datamartUpdater.getDatamart().getAllWeatherData(), currentMovies);
-        }
-    }
 }

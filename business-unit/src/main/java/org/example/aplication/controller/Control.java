@@ -32,14 +32,6 @@ public class Control {
         cliInterface.start();
     }
 
-    public void updateWeatherData(String jsonWeather) {
-        dataProcessingService.processNewWeatherData(jsonWeather);
-    }
-
-    public void updateMoviesData(String jsonMovies) {
-        dataProcessingService.processNewMovieData(jsonMovies);
-    }
-
     public void processHistoricalData(List<String> weatherEvents, List<String> movieEvents) {
         dataProcessingService.processHistoricalData(weatherEvents, movieEvents);
     }

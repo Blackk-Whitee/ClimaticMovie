@@ -34,9 +34,6 @@ public class BusinessUnitActiveMQConsumer {
 
                 if (destination instanceof Topic) {
                     String topicName = ((Topic) destination).getTopicName();
-                    System.out.println("[INFO] Mensaje recibido en topic: " + topicName);
-                    System.out.println("[DEBUG] Contenido: " + json);
-
                     switch (topicName) {
                         case "Weather":
                             accumulator.addWeatherEvent(json);
@@ -47,16 +44,13 @@ public class BusinessUnitActiveMQConsumer {
                         default:
                             System.err.println("Topic desconocido: " + topicName);
                     }
-
                     resetIdleTimer(); // Reinicia temporizador
                 }
-
                 message.acknowledge();
             } catch (JMSException e) {
                 System.err.println("Error procesando mensaje: " + e.getMessage());
             }
         };
-
         List<String> topics = List.of("Weather", "movies.Trending");
         this.consumer = new ActiveMQRealTimeConsumer(brokerUrl, "business-unit", topics, listener);
     }
@@ -65,9 +59,8 @@ public class BusinessUnitActiveMQConsumer {
         if (scheduledProcessing != null && !scheduledProcessing.isDone()) {
             scheduledProcessing.cancel(false);
         }
-
         scheduledProcessing = scheduler.schedule(() -> {
-            System.out.println("[INFO] Tiempo de inactividad alcanzado. Procesando lote...");
+            System.out.println("[INFO] Eventos recibidos correctamente. Procesando lote...");
             control.processHistoricalData(
                     accumulator.getWeatherEvents(),
                     accumulator.getMovieEvents()
