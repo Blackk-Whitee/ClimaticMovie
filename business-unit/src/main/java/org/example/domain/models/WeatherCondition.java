@@ -7,12 +7,10 @@ public class WeatherCondition {
 
     private static Map<String, List<String>> createWeatherGenreMap() {
         Map<String, List<String>> map = new HashMap<>();
-
 // Condiciones soleadas/despejadas
         map.put("Sunny", Arrays.asList("Aventura", "Comedia", "Familia", "Fantasía", "Animación", "Música"));
         map.put("Clear", Arrays.asList("Aventura", "Comedia", "Familia", "Fantasía", "Animación", "Música"));
         map.put("Partly cloudy", Arrays.asList("Aventura", "Comedia", "Familia", "Fantasía", "Animación", "Música"));
-
 // Condiciones lluviosas
         map.put("Light rain", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
         map.put("Light drizzle", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
@@ -27,7 +25,6 @@ public class WeatherCondition {
         map.put("Moderate or heavy rain shower", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
         map.put("Moderate or heavy rain with thunder", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
         map.put("Patchy rain possible", Arrays.asList("Drama", "Romance", "Misterio", "Ciencia ficción", "Documental"));
-
 // Condiciones nubladas
         map.put("Cloudy", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));
         map.put("Overcast", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));
@@ -35,7 +32,6 @@ public class WeatherCondition {
         map.put("Fog", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));
         map.put("Thundery outbreaks possible", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));
         map.put("Patchy light rain with thunder", Arrays.asList("Suspense", "Misterio", "Crimen", "Ciencia ficción", "Historia"));
-
 // Condiciones de nieve
         map.put("Light snow", Arrays.asList("Fantasía", "Drama", "Animación", "Historia", "Bélica", "Película de TV"));
         map.put("Light snow showers", Arrays.asList("Fantasía", "Drama", "Animación", "Historia", "Bélica", "Película de TV"));
@@ -47,7 +43,6 @@ public class WeatherCondition {
         map.put("Heavy snow", Arrays.asList("Fantasía", "Drama", "Animación", "Historia", "Bélica", "Película de TV"));
         map.put("Moderate or heavy snow showers", Arrays.asList("Fantasía", "Drama", "Animación", "Historia", "Bélica", "Película de TV"));
         map.put("Moderate or heavy snow with thunder", Arrays.asList("Fantasía", "Drama", "Animación", "Historia", "Bélica", "Película de TV"));
-
 // Condiciones extremas
         map.put("Blizzard", Arrays.asList("Terror", "Suspense", "Crimen", "Ciencia ficción", "Documental"));
         map.put("Blowing snow", Arrays.asList("Terror", "Suspense", "Crimen", "Ciencia ficción", "Documental"));
@@ -65,7 +60,6 @@ public class WeatherCondition {
         map.put("Patchy sleet possible", Arrays.asList("Terror", "Suspense", "Crimen", "Ciencia ficción", "Documental"));
         map.put("Freezing fog", Arrays.asList("Terror", "Suspense", "Crimen", "Ciencia ficción", "Documental"));
         map.put("Patchy freezing drizzle possible", Arrays.asList("Terror", "Suspense", "Crimen", "Ciencia ficción", "Documental"));
-
         // Condición por defecto
         map.put("default", Arrays.asList("Drama", "Comedia", "Aventura"));
         return map;

@@ -7,14 +7,15 @@ import java.time.LocalDate;
 import java.util.*;
 
 public class SQLiteDatamart {
-    private static final String DB_URL = "jdbc:sqlite:datamart.db";
+    private final String dbUrl;
 
-    public SQLiteDatamart() {
+    public SQLiteDatamart(String dbUrl) {
+        this.dbUrl = dbUrl;
         initializeDatabase();
     }
 
     private void initializeDatabase() {
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              Statement stmt = conn.createStatement()) {
 
             // Tabla de clima
@@ -44,7 +45,7 @@ public class SQLiteDatamart {
     }
 
     public void updateWeatherData(List<Weather> weatherData) {
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              PreparedStatement clearStmt = conn.prepareStatement("DELETE FROM weather");
              PreparedStatement insertStmt = conn.prepareStatement(
                      "INSERT OR REPLACE INTO weather VALUES (?, ?, ?, ?, ?)")) {
@@ -68,7 +69,7 @@ public class SQLiteDatamart {
     }
 
     public void updateRecommendations(List<Recommendation> recommendations) {
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              PreparedStatement clearStmt = conn.prepareStatement("DELETE FROM recommendations");
              PreparedStatement insertStmt = conn.prepareStatement(
                      "INSERT OR REPLACE INTO recommendations VALUES (?, ?, ?)")) {
@@ -91,7 +92,7 @@ public class SQLiteDatamart {
     }
 
     public void updateMovies(List<Movie> movies) {
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              PreparedStatement clearStmt = conn.prepareStatement("DELETE FROM movies");
              PreparedStatement insertStmt = conn.prepareStatement(
                      "INSERT OR REPLACE INTO movies (title, releaseDate, voteAverage, genres) VALUES (?, ?, ?, ?)")) {
@@ -118,7 +119,7 @@ public class SQLiteDatamart {
         List<Weather> weatherList = new ArrayList<>();
         String query = "SELECT city, temperature, humidity, condition, timestamp FROM weather";
 
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
 
@@ -141,7 +142,7 @@ public class SQLiteDatamart {
         List<Movie> movieList = new ArrayList<>();
         String query = "SELECT title, releaseDate, voteAverage, genres FROM movies";
 
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              Statement stmt = conn.createStatement();
              ResultSet rs = stmt.executeQuery(query)) {
 
@@ -162,7 +163,7 @@ public class SQLiteDatamart {
     public Recommendation getRecommendationForCity(String city) {
         String query = "SELECT city, weather_condition, recommended_movies FROM recommendations WHERE city = ?";
 
-        try (Connection conn = DriverManager.getConnection(DB_URL);
+        try (Connection conn = DriverManager.getConnection(dbUrl);
              PreparedStatement stmt = conn.prepareStatement(query)) {
 
             stmt.setString(1, city);
