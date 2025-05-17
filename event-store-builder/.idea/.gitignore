@@ -8,3 +8,4 @@
 /dataSources.local.xml
 .idea/usage.statistics.xml
 .idea/**/tasks.xml
+/targetclasses/
