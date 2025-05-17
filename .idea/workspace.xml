@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="" />
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/EventAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/MovieParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/WeatherParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/cli/CLIInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/models/WeatherCondition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DataProcessingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/EventStoreReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/store/SQLiteDatamart.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +75,7 @@
     "Application.main_movie.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
+    "git-widget-placeholder": "feature/business-unit",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
@@ -67,9 +84,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -93,7 +110,7 @@
     <configuration name="main-business" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="business-unit" />
-      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616" />
+      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 jdbc:sqlite:datamart.db" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -121,6 +138,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="business-unit" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="business-unit" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.Main" />

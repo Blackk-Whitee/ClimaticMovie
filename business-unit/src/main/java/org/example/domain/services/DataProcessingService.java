@@ -2,108 +2,56 @@ package org.example.domain.services;
 
 import org.example.domain.models.*;
 import org.example.infrastructure.store.SQLiteDatamart;
-import com.google.gson.Gson;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.util.*;
+
+import java.util.List;
+import java.util.Objects;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.ArrayList;
 
 public class DataProcessingService {
-    private final SQLiteDatamart datamart;
-    private final RecommendationService recommendationService;
-    private final Gson gson = new Gson();
-    private final JsonParser jsonParser = new JsonParser();
+
+    private final WeatherParser weatherParser;
+    private final MovieParser movieParser;
+    private final DatamartUpdater datamartUpdater;
 
     public DataProcessingService(SQLiteDatamart datamart, RecommendationService recommendationService) {
-        this.datamart = datamart;
-        this.recommendationService = recommendationService;
+        this.weatherParser = new WeatherParser();
+        this.movieParser = new MovieParser();
+        this.datamartUpdater = new DatamartUpdater(datamart, recommendationService);
     }
 
     public void processHistoricalData(List<String> weatherEvents, List<String> movieEvents) {
-        // Procesar datos históricos de clima
         List<Weather> weatherData = weatherEvents.stream()
-                .map(this::parseWeatherEvent)
+                .map(weatherParser::parse)
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 
-        // Procesar datos históricos de películas
         List<Movie> movieData = movieEvents.stream()
-                .map(this::parseMovieEvent)
+                .map(movieParser::parse)
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 
-        // Actualizar datamart
-        updateDatamart(weatherData, movieData);
+        datamartUpdater.updateDatamart(weatherData, movieData);
     }
 
     public void processNewWeatherData(String jsonWeather) {
-        Weather weather = parseWeatherEvent(jsonWeather);
+        Weather weather = weatherParser.parse(jsonWeather);
         if (weather != null) {
-            List<Weather> currentWeather = datamart.getAllWeatherData();
-
-            // Reemplazar datos de esta ciudad
+            List<Weather> currentWeather = datamartUpdater.getDatamart().getAllWeatherData();
             currentWeather.removeIf(w -> w.getCity().equals(weather.getCity()));
             currentWeather.add(weather);
-
-            // Actualizar datamart con películas existentes
-            updateDatamart(currentWeather, datamart.getAllMovies());
+            datamartUpdater.updateDatamart(currentWeather, datamartUpdater.getDatamart().getAllMovies());
         }
     }
 
     public void processNewMovieData(String jsonMovie) {
-        Movie movie = parseMovieEvent(jsonMovie);
+        Movie movie = movieParser.parse(jsonMovie);
         if (movie != null) {
-            List<Movie> currentMovies = datamart.getAllMovies();
-            // Eliminar si ya existe una película con el mismo título
+            List<Movie> currentMovies = datamartUpdater.getDatamart().getAllMovies();
             currentMovies.removeIf(m -> m.getTitle().equalsIgnoreCase(movie.getTitle()));
-            // Añadir la nueva película
             currentMovies.add(movie);
-            // Actualizar datamart con clima existente
-            updateDatamart(datamart.getAllWeatherData(), currentMovies);
-        }
-    }
-
-
-    private void updateDatamart(List<Weather> weatherData, List<Movie> movieData) {
-        // Actualizar tablas de datos crudos
-        datamart.updateWeatherData(weatherData);
-        datamart.updateMovies(movieData);
-
-        // Generar y actualizar recomendaciones
-        List<Recommendation> recommendations = recommendationService.generateRecommendations(weatherData, movieData);
-        datamart.updateRecommendations(recommendations);
-    }
-
-    private Weather parseWeatherEvent(String json) {
-        try {
-            JsonObject obj = jsonParser.parse(json).getAsJsonObject();
-            return new Weather(
-                    obj.get("city").getAsString(),
-                    obj.get("temperature").getAsDouble(),
-                    obj.get("humidity").getAsInt(),
-                    obj.get("condition").getAsString(),
-                    Instant.parse(obj.get("ts").getAsString())
-            );
-        } catch (Exception e) {
-            System.err.println("Error parsing weather event: " + e.getMessage());
-            return null;
-        }
-    }
-
-    private Movie parseMovieEvent(String json) {
-        try {
-            JsonObject obj = jsonParser.parse(json).getAsJsonObject();
-            return new Movie(
-                    obj.get("title").getAsString(),
-                    LocalDate.parse(obj.get("releaseDate").getAsString()),
-                    obj.get("voteAverage").getAsDouble(),
-                    gson.fromJson(obj.get("genres").getAsJsonArray(), List.class)
-            );
-        } catch (Exception e) {
-            System.err.println("Error parsing movie event: " + e.getMessage());
-            return null;
+            datamartUpdater.updateDatamart(datamartUpdater.getDatamart().getAllWeatherData(), currentMovies);
         }
     }
 }
