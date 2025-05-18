@@ -20,16 +20,26 @@ public class DatamartUpdater {
     }
 
     public void updateDatamart(List<Weather> weatherData, List<Movie> movieData) {
+        List<Weather> finalWeatherData = weatherData;
+        List<Movie> finalMovieData = movieData;
+        if (weatherData.isEmpty()) {
+            finalWeatherData = datamart.getAllWeatherData();
+        }
+        if (movieData.isEmpty()) {
+            finalMovieData = datamart.getAllMovies();
+        }
+        // Solo actualizamos si hay nuevos datos reales
         if (!weatherData.isEmpty()) {
             datamart.updateWeatherData(weatherData);
         }
         if (!movieData.isEmpty()) {
             datamart.updateMovies(movieData);
         }
-
+        // Generamos recomendaciones con los datos completos (nuevos + antiguos)
         if (!weatherData.isEmpty() || !movieData.isEmpty()) {
-            List<Recommendation> recommendations = recommendationService.generateRecommendations(weatherData, movieData);
+            List<Recommendation> recommendations = recommendationService.generateRecommendations(finalWeatherData, finalMovieData);
             datamart.updateRecommendations(recommendations);
         }
     }
+
 }
