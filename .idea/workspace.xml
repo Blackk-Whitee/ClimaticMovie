@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/aplication/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/domain/services/DatamartUpdater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/src/main/java/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.java" afterDir="false" />
+    <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes">
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/DataProcessingServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/DatamartUpdaterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/EventAccumulatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/MovieParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/RecommendationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/domain/services/WeatherParserTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/business-unit/src/test/java/org/example/infrastructure/store/SQLiteDatamartTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/business-unit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,39 +59,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main-business.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main-event.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main-weather.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main_movie.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/business-unit&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/aimar/IdeaProjects/ClimaticMovie&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.main-business.executor": "Run",
+    "Application.main-event.executor": "Run",
+    "Application.main-weather.executor": "Run",
+    "Application.main_movie.executor": "Run",
+    "JUnit.DataProcessingServiceTest.executor": "Run",
+    "JUnit.DatamartUpdaterTest.executor": "Run",
+    "JUnit.EventAccumulatorTest.executor": "Run",
+    "JUnit.EventStoreReaderTest.executor": "Run",
+    "JUnit.MovieParserTest.executor": "Run",
+    "JUnit.RecommendationServiceTest.executor": "Run",
+    "JUnit.SQLiteDatamartTest.executor": "Run",
+    "JUnit.WeatherParserTest.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "feature/business-unit",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;GitIgnore&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Application.main-business">
+}]]></component>
+  <component name="RunManager" selected="JUnit.SQLiteDatamartTest">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
@@ -127,16 +140,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="DataProcessingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business-unit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.DataProcessingServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="EventStoreReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="business-unit" />
-      <option name="filePath" />
-      <method v="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.infrastructure.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.infrastructure.store" />
+      <option name="MAIN_CLASS_NAME" value="org.example.infrastructure.store.EventStoreReaderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business-unit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.RecommendationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SQLiteDatamartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business-unit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.infrastructure.store.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.infrastructure.store" />
+      <option name="MAIN_CLASS_NAME" value="org.example.infrastructure.store.SQLiteDatamartTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WeatherParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="business-unit" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.WeatherParserTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
@@ -144,7 +221,21 @@
       <item itemvalue="Application.main-business" />
       <item itemvalue="Application.main_movie" />
       <item itemvalue="Application.main-event" />
+      <item itemvalue="JUnit.EventStoreReaderTest" />
+      <item itemvalue="JUnit.RecommendationServiceTest" />
+      <item itemvalue="JUnit.SQLiteDatamartTest" />
+      <item itemvalue="JUnit.WeatherParserTest" />
+      <item itemvalue="JUnit.DataProcessingServiceTest" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SQLiteDatamartTest" />
+        <item itemvalue="JUnit.EventStoreReaderTest" />
+        <item itemvalue="JUnit.RecommendationServiceTest" />
+        <item itemvalue="JUnit.DataProcessingServiceTest" />
+        <item itemvalue="JUnit.WeatherParserTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -171,6 +262,7 @@
       <workItem from="1747298854712" duration="19134000" />
       <workItem from="1747343177885" duration="5322000" />
       <workItem from="1747392476423" duration="3621000" />
+      <workItem from="1747522783701" duration="4197000" />
     </task>
     <task id="LOCAL-00001" summary="merge with business-unit">
       <option name="closed" value="true" />
@@ -197,7 +289,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="feature/business-unit" />
                       </list>
                     </value>
                   </entry>
@@ -210,6 +302,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="Final classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final classes" />
   </component>
 </project>
