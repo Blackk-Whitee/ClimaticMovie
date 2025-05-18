@@ -6,7 +6,9 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+
 # Ignorar el archivo .env
 /src/main/resources/.env
 # Ignorar el archivo pom.xml en la raíz del proyecto
 /pom.xml
+**/target/
