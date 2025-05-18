@@ -1,0 +1,52 @@
+{"topic":"Weather", "ts":"2025-05-16T16:58:00.697628100Z", "ss":"feeder-weather", "city":"Albacete", "temperature":23.10, "humidity":31, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:00.877440700Z", "ss":"feeder-weather", "city":"Alicante", "temperature":27.40, "humidity":81, "condition":"Partly Cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:00.976885700Z", "ss":"feeder-weather", "city":"Almería", "temperature":21.30, "humidity":78, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.087354800Z", "ss":"feeder-weather", "city":"Ávila", "temperature":15.90, "humidity":55, "condition":"Patchy rain nearby"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.197579800Z", "ss":"feeder-weather", "city":"Badajoz", "temperature":28.20, "humidity":28, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.297548100Z", "ss":"feeder-weather", "city":"Barcelona", "temperature":21.20, "humidity":69, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.401955200Z", "ss":"feeder-weather", "city":"Bilbao", "temperature":17.00, "humidity":55, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.498062100Z", "ss":"feeder-weather", "city":"Burgos", "temperature":16.30, "humidity":48, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.606683900Z", "ss":"feeder-weather", "city":"Cáceres", "temperature":23.10, "humidity":39, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.716666200Z", "ss":"feeder-weather", "city":"Cádiz", "temperature":22.40, "humidity":65, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.821512400Z", "ss":"feeder-weather", "city":"Torruellola De La Plana", "temperature":22.10, "humidity":50, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:01.926677100Z", "ss":"feeder-weather", "city":"Ciudad Real", "temperature":21.30, "humidity":35, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.077117100Z", "ss":"feeder-weather", "city":"Córdoba", "temperature":23.40, "humidity":83, "condition":"Partly Cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.187888300Z", "ss":"feeder-weather", "city":"Cuenca", "temperature":16.10, "humidity":68, "condition":"Overcast"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.281354100Z", "ss":"feeder-weather", "city":"Girona", "temperature":19.10, "humidity":60, "condition":"Partly cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.393163200Z", "ss":"feeder-weather", "city":"Granada", "temperature":21.50, "humidity":36, "condition":"Partly Cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.496346900Z", "ss":"feeder-weather", "city":"Guadalajara", "temperature":28.30, "humidity":11, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.597420700Z", "ss":"feeder-weather", "city":"Huelva", "temperature":21.10, "humidity":56, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.715987500Z", "ss":"feeder-weather", "city":"Huesca", "temperature":22.10, "humidity":50, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.817448400Z", "ss":"feeder-weather", "city":"Jaén", "temperature":22.50, "humidity":30, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:02.927327700Z", "ss":"feeder-weather", "city":"Ashby De La Zouch", "temperature":19.00, "humidity":40, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.047285500Z", "ss":"feeder-weather", "city":"Logroño", "temperature":20.10, "humidity":46, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.168453400Z", "ss":"feeder-weather", "city":"Las Palmas De Gran Canaria", "temperature":23.30, "humidity":53, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.277404200Z", "ss":"feeder-weather", "city":"León", "temperature":25.00, "humidity":25, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.388425500Z", "ss":"feeder-weather", "city":"Lleida", "temperature":25.40, "humidity":29, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.496337200Z", "ss":"feeder-weather", "city":"Lugo", "temperature":19.30, "humidity":56, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:03.596095800Z", "ss":"feeder-weather", "city":"Madrid", "temperature":22.40, "humidity":41, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:07.667299400Z", "ss":"feeder-weather", "city":"Málaga", "temperature":22.00, "humidity":57, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:07.776430300Z", "ss":"feeder-weather", "city":"Murcia", "temperature":26.10, "humidity":39, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:07.886407900Z", "ss":"feeder-weather", "city":"Orense", "temperature":22.20, "humidity":45, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:07.987324700Z", "ss":"feeder-weather", "city":"Oviedo", "temperature":16.30, "humidity":82, "condition":"Partly cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.097498Z", "ss":"feeder-weather", "city":"Palencia", "temperature":19.00, "humidity":40, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.237276500Z", "ss":"feeder-weather", "city":"Palma", "temperature":25.30, "humidity":51, "condition":"Patchy rain nearby"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.356140900Z", "ss":"feeder-weather", "city":"Pamplona", "temperature":17.20, "humidity":55, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.453380800Z", "ss":"feeder-weather", "city":"Pontevedra", "temperature":22.40, "humidity":50, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.556684500Z", "ss":"feeder-weather", "city":"Salamanca", "temperature":20.10, "humidity":43, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.667888600Z", "ss":"feeder-weather", "city":"San Marino", "temperature":12.20, "humidity":44, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.786310300Z", "ss":"feeder-weather", "city":"Santa Cruz De Tenerife", "temperature":18.30, "humidity":64, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.886309100Z", "ss":"feeder-weather", "city":"Santander", "temperature":18.00, "humidity":68, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:08.997471300Z", "ss":"feeder-weather", "city":"Segovia", "temperature":20.40, "humidity":43, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.116963Z", "ss":"feeder-weather", "city":"Sevilla", "temperature":29.00, "humidity":25, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.236829100Z", "ss":"feeder-weather", "city":"Soria", "temperature":17.80, "humidity":36, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.339159600Z", "ss":"feeder-weather", "city":"Tarragona", "temperature":21.10, "humidity":73, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.446769200Z", "ss":"feeder-weather", "city":"Teruel", "temperature":15.10, "humidity":43, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.557370700Z", "ss":"feeder-weather", "city":"Toledo", "temperature":26.70, "humidity":29, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.676920200Z", "ss":"feeder-weather", "city":"Valencia", "temperature":28.40, "humidity":70, "condition":"Partly cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.776304700Z", "ss":"feeder-weather", "city":"Valladolid", "temperature":19.00, "humidity":40, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.876233700Z", "ss":"feeder-weather", "city":"Vitoria-Gasteiz", "temperature":17.00, "humidity":55, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:09.977982900Z", "ss":"feeder-weather", "city":"Zamora De Hidalgo", "temperature":25.20, "humidity":22, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:10.076598200Z", "ss":"feeder-weather", "city":"Zaragoza", "temperature":22.20, "humidity":43, "condition":"Sunny"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:10.186171300Z", "ss":"feeder-weather", "city":"Ceuta", "temperature":23.10, "humidity":53, "condition":"Partly Cloudy"}
+{"topic":"Weather", "ts":"2025-05-16T16:58:10.287335400Z", "ss":"feeder-weather", "city":"Melilla", "temperature":21.10, "humidity":64, "condition":"Sunny"}
