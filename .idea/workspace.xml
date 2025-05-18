@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/datamart.db" beforeDir="false" afterPath="$PROJECT_DIR$/datamart.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler$WeatherJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler$WeatherJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/domain/models/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/domain/models/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Condition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Current.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Current.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/database/SQLiteEventStorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/database/SQLiteEventStorer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/messaging/ActiveMQEventStorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/messaging/ActiveMQEventStorer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/feeder-movie" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -91,6 +104,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.main-weather">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
