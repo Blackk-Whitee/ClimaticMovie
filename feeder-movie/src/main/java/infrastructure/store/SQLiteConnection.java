@@ -22,12 +22,13 @@ public class SQLiteConnection implements SQLiteRepositoryInterface {
                 )""";
             String createMoviesTable = """
                 CREATE TABLE IF NOT EXISTS movies (
-                    id INTEGER PRIMARY KEY,
-                    title TEXT,
+                    topic TEXT,
+                    ts TEXT,
+                    ss TEXT,
+                    title TEXT PRIMARY KEY,
                     release_date TEXT,
                     vote_average REAL,
-                    vote_count INTEGER,
-                    genre_ids TEXT
+                    genres TEXT
                 )""";
             stmt.execute(createGenresTable);
             stmt.execute(createMoviesTable);
@@ -35,9 +36,11 @@ public class SQLiteConnection implements SQLiteRepositoryInterface {
             e.printStackTrace();
         }
     }
+
     public Connection getConnection() throws SQLException {
         return DriverManager.getConnection(this.DB_URL);
     }
+
     @Override
     public void saveGenres(Map<Integer, String> genres) {
         String sql = "INSERT OR IGNORE INTO genres (id, name) VALUES (?, ?)";
@@ -54,20 +57,24 @@ public class SQLiteConnection implements SQLiteRepositoryInterface {
             e.printStackTrace();
         }
     }
+
     @Override
     public void saveMovies(List<Movie> movies) {
         String sql = """
             INSERT OR IGNORE INTO movies 
-            (id, title, release_date, vote_average, vote_count, genre_ids) 
-            VALUES (?, ?, ?, ?, ?, ?)""";
+            (topic, ts, ss, title, release_date, vote_average, genres) 
+            VALUES (?, ?, ?, ?, ?, ?, ?)""";
         try (Connection conn = this.getConnection();
              PreparedStatement pstmt = conn.prepareStatement(sql)) {
             conn.setAutoCommit(false);
             for (Movie movie : movies) {
-                pstmt.setString(2, movie.getTitle());
-                pstmt.setString(3, movie.getReleaseDate());
-                pstmt.setDouble(4, movie.getVoteAverage());
-                pstmt.setString(6, movie.getGenreIds().toString());
+                pstmt.setString(1, movie.getTopic());
+                pstmt.setString(2, String.valueOf(movie.getTs()));
+                pstmt.setString(3, movie.getSs());
+                pstmt.setString(4, movie.getTitle());
+                pstmt.setString(5, movie.getReleaseDate());
+                pstmt.setDouble(6, movie.getVoteAverage());
+                pstmt.setString(7, String.join(",", movie.getGenreIds()));
                 pstmt.executeUpdate();
             }
             conn.commit();
