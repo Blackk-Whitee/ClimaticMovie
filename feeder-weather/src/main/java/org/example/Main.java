@@ -1,4 +1,4 @@
-package org.example.application;
+package org.example;
 
 import org.example.application.controller.Control;
 import org.example.infrastructure.api.WeatherProvider;
@@ -13,7 +13,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         if (args.length < 2) {
-            System.err.println("Uso: java -jar feeder-weather.jar <api_key> <broker_url>");
+            System.err.println("Uso: java -jar feeder-weather.jar <api_key> <database_url> <broker_url> <cities_path>");
             System.exit(1);
         }
 
