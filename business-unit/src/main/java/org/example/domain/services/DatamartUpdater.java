@@ -20,9 +20,16 @@ public class DatamartUpdater {
     }
 
     public void updateDatamart(List<Weather> weatherData, List<Movie> movieData) {
-        datamart.updateWeatherData(weatherData);
-        datamart.updateMovies(movieData);
-        List<Recommendation> recommendations = recommendationService.generateRecommendations(weatherData, movieData);
-        datamart.updateRecommendations(recommendations);
+        if (!weatherData.isEmpty()) {
+            datamart.updateWeatherData(weatherData);
+        }
+        if (!movieData.isEmpty()) {
+            datamart.updateMovies(movieData);
+        }
+
+        if (!weatherData.isEmpty() || !movieData.isEmpty()) {
+            List<Recommendation> recommendations = recommendationService.generateRecommendations(weatherData, movieData);
+            datamart.updateRecommendations(recommendations);
+        }
     }
 }

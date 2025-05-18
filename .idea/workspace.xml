@@ -7,13 +7,6 @@
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/aplication/controller/Control.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/DataProcessingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/domain/services/DataProcessingService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/ActiveMQRealTimeConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/messaging/BusinessUnitActiveMQConsumer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/weather-api" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -76,7 +69,7 @@
     &quot;JUnit.WeatherParserTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/business-unit&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/aimar/IdeaProjects/ClimaticMovie&quot;,
@@ -99,7 +92,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Application.main_movie">
+  <component name="RunManager" selected="Application.main-business">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
@@ -215,17 +208,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="ClimaticMovie" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ClimaticMovie" />
-      <option name="filePath" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.main-weather" />
@@ -240,11 +222,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SQLiteDatamartTest" />
-        <item itemvalue="JUnit.EventStoreReaderTest" />
-        <item itemvalue="JUnit.RecommendationServiceTest" />
         <item itemvalue="JUnit.DataProcessingServiceTest" />
         <item itemvalue="JUnit.WeatherParserTest" />
+        <item itemvalue="JUnit.SQLiteDatamartTest" />
+        <item itemvalue="JUnit.RecommendationServiceTest" />
+        <item itemvalue="JUnit.EventStoreReaderTest" />
       </list>
     </recent_temporary>
   </component>
