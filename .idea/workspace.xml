@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/datamart.db" beforeDir="false" afterPath="$PROJECT_DIR$/datamart.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler$WeatherJob.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler$WeatherJob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/application/scheduler/WeatherScheduler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/domain/models/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/domain/models/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Condition.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Condition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Current.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Current.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Location.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse$Location.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider$WeatherApiResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherApiProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/api/WeatherProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/database/SQLiteEventStorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/database/SQLiteEventStorer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/messaging/ActiveMQEventStorer.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-weather/target/classes/org/example/infrastructure/messaging/ActiveMQEventStorer.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="feature/feeder-movie" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,47 +64,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.main-business.executor": "Run",
-    "Application.main-event.executor": "Run",
-    "Application.main-weather.executor": "Run",
-    "Application.main_movie.executor": "Run",
-    "JUnit.DataProcessingServiceTest.executor": "Run",
-    "JUnit.DatamartUpdaterTest.executor": "Run",
-    "JUnit.EventAccumulatorTest.executor": "Run",
-    "JUnit.EventStoreReaderTest.executor": "Run",
-    "JUnit.MovieParserTest.executor": "Run",
-    "JUnit.RecommendationServiceTest.executor": "Run",
-    "JUnit.SQLiteDatamartTest.executor": "Run",
-    "JUnit.WeatherParserTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-business.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-event.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main-weather.executor&quot;: &quot;Run&quot;,
+    &quot;Application.main_movie.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DataProcessingServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.DatamartUpdaterTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventAccumulatorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EventStoreReaderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MovieParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RecommendationServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SQLiteDatamartTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.WeatherParserTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aimar/IdeaProjects/ClimaticMovie&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;GitIgnore&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager" selected="Application.main_movie">
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.main-weather">
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="event-store-builder" />
