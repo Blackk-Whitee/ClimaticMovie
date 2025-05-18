@@ -29,7 +29,7 @@ public class Control {
                 .build();
         Trigger trigger = TriggerBuilder.newTrigger()
                 .withIdentity("dailyTrigger", "group1")
-                .withSchedule(CronScheduleBuilder.dailyAtHourAndMinute(12, 47))
+                .withSchedule(CronScheduleBuilder.dailyAtHourAndMinute(13, 05))
                 .build();
         Scheduler scheduler = StdSchedulerFactory.getDefaultScheduler();
         scheduler.start(); scheduler.scheduleJob(job, trigger);
