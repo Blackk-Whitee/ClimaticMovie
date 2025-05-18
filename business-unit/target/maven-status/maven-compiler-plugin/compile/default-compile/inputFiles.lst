@@ -1,0 +1,17 @@
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\aplication\cli\CLIInterface.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\aplication\controller\Control.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\models\Movie.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\models\Recommendation.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\models\Weather.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\models\WeatherCondition.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\DatamartUpdater.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\DataProcessingService.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\EventAccumulator.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\MovieParser.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\RecommendationService.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\domain\services\WeatherParser.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\infrastructure\messaging\ActiveMQRealTimeConsumer.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\infrastructure\messaging\BusinessUnitActiveMQConsumer.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\infrastructure\store\EventStoreReader.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\infrastructure\store\SQLiteDatamart.java
+C:\Users\aimar\IdeaProjects\ClimaticMovie\business-unit\src\main\java\org\example\Main.java
