@@ -103,6 +103,51 @@ public class SQLiteDatamart {
         }
     }
 
+    public List<Weather> getAllWeatherData() {
+        List<Weather> weatherList = new ArrayList<>();
+        String query = "SELECT city, temperature, humidity, condition, timestamp FROM weather";
+
+        try (Connection conn = DriverManager.getConnection(dbUrl);
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+
+            while (rs.next()) {
+                weatherList.add(new Weather(
+                        rs.getString("city"),
+                        rs.getDouble("temperature"),
+                        rs.getInt("humidity"),
+                        rs.getString("condition"),
+                        Instant.parse(rs.getString("timestamp"))
+                ));
+            }
+        } catch (SQLException e) {
+            System.err.println("Error obteniendo datos de clima: " + e.getMessage());
+        }
+        return weatherList;
+    }
+
+    public List<Movie> getAllMovies() {
+        List<Movie> movieList = new ArrayList<>();
+        String query = "SELECT title, releaseDate, voteAverage, genres FROM movies";
+
+        try (Connection conn = DriverManager.getConnection(dbUrl);
+             Statement stmt = conn.createStatement();
+             ResultSet rs = stmt.executeQuery(query)) {
+
+            while (rs.next()) {
+                movieList.add(new Movie(
+                        rs.getString("title"),
+                        LocalDate.parse(rs.getString("releaseDate")),
+                        rs.getDouble("voteAverage"),
+                        Arrays.asList(rs.getString("genres").split(","))
+                ));
+            }
+        } catch (SQLException e) {
+            System.err.println("Error obteniendo películas: " + e.getMessage());
+        }
+        return movieList;
+    }
+
     public Recommendation getRecommendationForCity(String city) {
         String query = "SELECT city, weather_condition, recommended_movies FROM recommendations WHERE city = ?";
         try (Connection conn = DriverManager.getConnection(dbUrl);
