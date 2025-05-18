@@ -6,51 +6,22 @@
   <component name="ChangeListManager">
     <list default="true" id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" beforeDir="false" afterPath="$PROJECT_DIR$/business-unit/target/classes/org/example/infrastructure/store/SQLiteDatamart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datamart.db" beforeDir="false" afterPath="$PROJECT_DIR$/datamart.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/src/main/java/application/controller/Control.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" beforeDir="false" afterPath="$PROJECT_DIR$/feeder-movie/target/classes/application/controller/Control.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;amadoartiiles&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Blackk-Whitee/ClimaticMovie.git&quot;,
-    &quot;accountId&quot;: &quot;0ca24a10-b30a-4d78-90ac-003d0451c410&quot;
-  }
-}</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2wmGHWwLER5FeJeoG0DsVLK2PvN" />
+  <component name="ProjectId" id="2xGifMqnZJQ2x6ThDhXfX0BVeWg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -58,192 +29,28 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.main-business.executor": "Run",
-    "Application.main-event.executor": "Run",
-    "Application.main-weather.executor": "Run",
-    "Application.main_movie.executor": "Run",
-    "JUnit.DataProcessingServiceTest.executor": "Run",
-    "JUnit.DatamartUpdaterTest.executor": "Run",
-    "JUnit.EventAccumulatorTest.executor": "Run",
-    "JUnit.EventStoreReaderTest.executor": "Run",
-    "JUnit.MovieParserTest.executor": "Run",
-    "JUnit.RecommendationServiceTest.executor": "Run",
-    "JUnit.SQLiteDatamartTest.executor": "Run",
-    "JUnit.WeatherParserTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
-    "ignore.virus.scanning.warn.message": "true",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/aimar/IdeaProjects/ClimaticMovie",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
-    ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "GitIgnore"
-    ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.main_movie">
-    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="event-store-builder" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;tcp://localhost:61616&quot; movies.Trending Weather" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main-business" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="business-unit" />
-      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 jdbc:sqlite:datamart.db" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main-event" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="event-store-builder" />
-      <option name="PROGRAM_PARAMETERS" value="tcp://localhost:61616 movies.Trending Weather" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main-weather" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
-      <module name="feeder-weather" />
-      <option name="PROGRAM_PARAMETERS" value="&quot;80d374e907784355b7f144840251903&quot; &quot;jdbc:sqlite:weather_data.db&quot; &quot;tcp://localhost:61616&quot; &quot;C:\Users\amado\OneDrive - Universidad de Las Palmas de Gran Canaria\Escritorio\Universidad\2º Año\DACD\Proyecto\Ciudades.csv&quot;" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main_movie" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="feeder-movie" />
-      <option name="PROGRAM_PARAMETERS" value="fad78be9b3ab76184df0846b4baa0ba1 sqlite tcp://localhost:61616 movies.Trending" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataProcessingServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.domain.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.domain.services" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.DataProcessingServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EventStoreReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.infrastructure.store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.infrastructure.store" />
-      <option name="MAIN_CLASS_NAME" value="org.example.infrastructure.store.EventStoreReaderTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RecommendationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.domain.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.domain.services" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.RecommendationServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SQLiteDatamartTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.infrastructure.store.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.infrastructure.store" />
-      <option name="MAIN_CLASS_NAME" value="org.example.infrastructure.store.SQLiteDatamartTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherParserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="business-unit" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.domain.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.domain.services" />
-      <option name="MAIN_CLASS_NAME" value="org.example.domain.services.WeatherParserTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
-      <module name="ClimaticMovie" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="ClimaticMovie" />
       <option name="filePath" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.main-weather" />
-      <item itemvalue="Application.main-business" />
-      <item itemvalue="Application.main_movie" />
-      <item itemvalue="Application.main-event" />
-      <item itemvalue="JUnit.EventStoreReaderTest" />
-      <item itemvalue="JUnit.RecommendationServiceTest" />
-      <item itemvalue="JUnit.SQLiteDatamartTest" />
-      <item itemvalue="JUnit.WeatherParserTest" />
-      <item itemvalue="JUnit.DataProcessingServiceTest" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.DataProcessingServiceTest" />
-        <item itemvalue="JUnit.WeatherParserTest" />
-        <item itemvalue="JUnit.SQLiteDatamartTest" />
-        <item itemvalue="JUnit.RecommendationServiceTest" />
-        <item itemvalue="JUnit.EventStoreReaderTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -256,61 +63,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="" />
-      <created>1746639638988</created>
+      <changelist id="d9f6a7d2-8828-4b67-b1a0-5ca961d40931" name="Changes" comment="Final classes" />
+      <created>1747570914271</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1746639638988</updated>
-      <workItem from="1746639640047" duration="186000" />
-      <workItem from="1746639829523" duration="20000" />
-      <workItem from="1746639864681" duration="25000" />
-      <workItem from="1746639896402" duration="747000" />
-      <workItem from="1746640776686" duration="2997000" />
-      <workItem from="1746651894453" duration="1702000" />
-      <workItem from="1747298854712" duration="19134000" />
-      <workItem from="1747343177885" duration="5322000" />
-      <workItem from="1747392476423" duration="3621000" />
-      <workItem from="1747522783701" duration="4197000" />
+      <updated>1747570914271</updated>
+      <workItem from="1747570917135" duration="64000" />
+      <workItem from="1747570990109" duration="6518000" />
     </task>
-    <task id="LOCAL-00001" summary="merge with business-unit">
-      <option name="closed" value="true" />
-      <created>1747510780317</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1747510780317</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="feature/business-unit" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Final classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final classes" />
   </component>
 </project>
