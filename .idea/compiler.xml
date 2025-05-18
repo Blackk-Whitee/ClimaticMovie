@@ -10,9 +10,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="business-unit" target="24" />
-      <module name="ClimaticMovie" target="22" />
-      <module name="event-store-builder" target="22" />
+      <module name="business-unit" target="21" />
+      <module name="ClimaticMovie" target="21" />
+      <module name="event-store-builder" target="21" />
       <module name="feeder-weather" target="22" />
     </bytecodeTargetLevel>
   </component>
