@@ -1,14 +1,21 @@
+### Build ###
 target/
+build/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+
+### Secretos / configuración local ###
+.env
+*.env
+!.env.example
+
+### Datos generados en ejecución ###
+eventstore/
+*.db
+*.sqlite
+*.sqlite3
 
 ### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-.idea/workspace.xml
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -22,20 +29,10 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
 ### VS Code ###
 .vscode/
 
-### Mac OS ###
+### Sistema operativo ###
 .DS_Store
-
-eventstore/
+Thumbs.db
+desktop.ini
